@@ -1,0 +1,19 @@
+{
+    "registredUser": {
+        "username": "pgats-user777",
+        "email": "pgats-user@email.com"
+    },
+
+    "newUser": {
+        "gender": "Mr",
+        "password": "P@ssw0rd!",
+        "firstName": "Cypress",
+        "lastName": "User",
+        "address": "123 Cypress St",
+        "country": "Canada",
+        "state": "Ontario",
+        "city": "Toronto",
+        "zipcode": "M4B1B3",
+        "mobileNumber": "1234567890"
+    }
+}

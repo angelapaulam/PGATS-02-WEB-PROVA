@@ -1,0 +1,28 @@
+{
+    "newUser": {
+        "gender": "Mr",
+        "password": "P@ssw0rd!",
+        "firstName": "Cypress",
+        "lastName": "User",
+        "address": "123 Cypress St",
+        "country": "Canada",
+        "state": "Ontario",
+        "city": "Toronto",
+        "zipcode": "M4B1B3",
+        "mobileNumber": "1234567890"
+    },
+
+    "product": {
+        "name": "Winter Top",
+        "quantity": "1",
+        "value": "Rs. 600"
+    },
+
+    "creditCard": {
+        "nameOnCard": "Cypress User",
+        "cardNumber": "4111111111111111",
+        "cvc": "123",
+        "expirationMonth": "12",
+        "expirationYear": "2025"
+    }
+}

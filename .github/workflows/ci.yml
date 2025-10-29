@@ -1,0 +1,27 @@
+name: CI - Automation Exercise
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: FAZER O CHECKOUT DO CÓDIGO
+      uses: actions/checkout@v4
+
+    - name: DEFINIR A VERSÃO DO NODE.JS
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+
+    - name: INSTALAR DEPENDÊNCIAS
+      run: npm install
+
+    - name: EXECUTAR OS TESTES E2E
+      run: npm test
