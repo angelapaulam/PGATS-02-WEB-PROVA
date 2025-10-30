@@ -1,5 +1,5 @@
 import Login from '../support/helpers/Login'
-import LoginData from '../fixtures/login/LoginData.json'
+import LoginData from '../fixtures/login/loginData.json'
 
 describe('Login', () => {
     beforeEach(() => {

@@ -1,5 +1,5 @@
 import ContactUs from '../support/helpers/ContactUs'
-import ContactUsData from '../fixtures/contactUs/ContactUsData.json'
+import ContactUsData from '../fixtures/contactUs/contactUsData.json'
 
 describe('Contact Us', () => {
     beforeEach(() => {
