@@ -1,7 +1,7 @@
-import Pagina from '../support/helpers/Pagina'
+import Home from '../support/helpers/Home'
 import { faker } from '@faker-js/faker'
 
-describe('Pagina', () => {
+describe('Home', () => {
     beforeEach(() => {
         cy.visit('/')
     })

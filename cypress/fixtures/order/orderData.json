@@ -12,17 +12,17 @@
         "mobileNumber": "1234567890"
     },
 
-    "produto": {
+    "product": {
         "name": "Winter Top",
         "quantity": "1",
         "value": "Rs. 600"
     },
 
-    "cartaoCredito": {
+    "creditCard": {
         "nameOnCard": "Cypress User",
-        "cardNumber": "5363636363636363",
-        "cvc": "458",
-        "expirationMonth": "11",
-        "expirationYear": "2026"
+        "cardNumber": "4111111111111111",
+        "cvc": "123",
+        "expirationMonth": "12",
+        "expirationYear": "2025"
     }
 }

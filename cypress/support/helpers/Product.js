@@ -1,4 +1,4 @@
-class Produto{
+class Product {
     accessPageViaMenu() {
         cy.contains('a', 'Products').click()
         cy.url().should('include', '/products')
@@ -11,4 +11,4 @@ class Produto{
     }
 }
 
-export default new Produto
+export default new Product

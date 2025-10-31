@@ -1,14 +1,14 @@
-import Produto from '../support/helpers/Produto'
-import produtoData from '../fixtures/product/produtoData.json'
+import Product from '../support/helpers/Product'
+import productData from '../fixtures/product/productData.json'
 
-describe('Produto', () => {
+describe('Product', () => {
     beforeEach(() => {
         cy.visit('/')
         Product.accessPageViaMenu()
     })
 
     it('Caso de teste 8: Verify All Products and product detail page', () => {
-        const produto = produtoData.produto
+        const product = productData.product
 
         cy.contains('.productinfo', product.name)
             .closest('.product-image-wrapper')
