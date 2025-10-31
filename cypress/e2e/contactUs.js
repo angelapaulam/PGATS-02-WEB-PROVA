@@ -7,7 +7,7 @@ describe('Contact Us', () => {
         ContactUs.accessPageViaMenu()
     })
 
-    it('Test Case 6: Contact Us Form', () => {
+    it('Caso de teste 6: Contact Us Form', () => {
         const form = ContactUsData.form
 
         ContactUs.sendForm(form)

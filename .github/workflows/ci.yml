@@ -1,4 +1,4 @@
-name: CI - Automation Exercise
+name: Integração Contínua
 
 on:
   workflow_dispatch:
@@ -12,16 +12,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: FAZER O CHECKOUT DO CÓDIGO
+    - name: Checkout
       uses: actions/checkout@v4
 
-    - name: DEFINIR A VERSÃO DO NODE.JS
+    - name: Instalar NodeJS
       uses: actions/setup-node@v4
       with:
         node-version: '20.x'
 
-    - name: INSTALAR DEPENDÊNCIAS
+    - name: Instalar dependências do projeto
       run: npm install
 
-    - name: EXECUTAR OS TESTES E2E
+    - name: Executar o Cypress - E2E
       run: npm test

@@ -1,14 +1,14 @@
-import Product from '../support/helpers/Product'
-import productData from '../fixtures/product/productData.json'
+import Produto from '../support/helpers/Produto'
+import produtoData from '../fixtures/product/produtoData.json'
 
-describe('Product', () => {
+describe('Produto', () => {
     beforeEach(() => {
         cy.visit('/')
         Product.accessPageViaMenu()
     })
 
-    it('Test Case 8: Verify All Products and product detail page', () => {
-        const product = productData.product
+    it('Caso de teste 8: Verify All Products and product detail page', () => {
+        const produto = produtoData.produto
 
         cy.contains('.productinfo', product.name)
             .closest('.product-image-wrapper')
@@ -20,7 +20,7 @@ describe('Product', () => {
         cy.contains(`Brand: ${product.brand}`).should('be.visible')
     })
 
-    it('Test Case 9: Search Product', () => {
+    it('Caso de teste 9: Search Product', () => {
         const product = productData.product
 
         Product.searchProduct(product.name)

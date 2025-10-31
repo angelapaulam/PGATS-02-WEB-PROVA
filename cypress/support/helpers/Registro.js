@@ -1,4 +1,4 @@
-class Register {
+class Registro{
     accessPageViaMenu() {
         cy.contains('a', 'Signup / Login').click()
         cy.contains('h2', 'New User Signup!').should('be.visible')
@@ -10,7 +10,7 @@ class Register {
         cy.contains('button', 'Signup').click()
     }
 
-    registerNewUser(user) {
+    registroNovoUsuario(user) {
         cy.contains('.title', 'Enter Account Information').should('be.visible')
         cy.get(`[data-qa=title] [value=${user.gender}]`).check()
         cy.get('[data-qa=password]').type(user.password)
@@ -26,4 +26,4 @@ class Register {
     }
 }
 
-export default new Register
+export default new Registro

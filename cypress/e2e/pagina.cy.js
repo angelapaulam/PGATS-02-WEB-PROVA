@@ -1,12 +1,12 @@
-import Home from '../support/helpers/Home'
+import Pagina from '../support/helpers/Pagina'
 import { faker } from '@faker-js/faker'
 
-describe('Home', () => {
+describe('Pagina', () => {
     beforeEach(() => {
         cy.visit('/')
     })
 
-    it('Test Case 10: Verify Subscription in home page', () => {
+    it('Caso de teste 10: Verify Subscription in home page', () => {
         const email = faker.internet.email()
 
         Home.subscribeOnNewsletter(email)
